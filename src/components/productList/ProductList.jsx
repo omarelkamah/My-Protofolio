@@ -1,5 +1,5 @@
 import './productList.scss'
-import { dataProjectsPage, products } from '../../data'
+import { dataProjectsPage } from '../../data'
 import Product from '../product/Product'
 import { Link } from 'react-router-dom'
 import { Fade } from 'react-reveal'

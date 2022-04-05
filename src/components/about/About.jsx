@@ -25,11 +25,9 @@ export default function About ({ dark }) {
                 by the readable content.
               </p>
               <p className='a-desc'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat duis aute irure dolor in
-                reprehende.
+                Hi, I'am Omar Ahmed From Alexandrian I make my components usable
+                to use it in many diffrent places with diffrent data that i
+                receive from api
               </p>
             </Fade>
           </div>

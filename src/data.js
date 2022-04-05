@@ -23,6 +23,17 @@ export const dataProjectsPage = [
   },
   {
     id: 2,
+    title: "E-Commerce React App",
+    desc: "Create E-commerce App With ReactJs And More Tooles, Please Check Everything. ",
+    img: "https://mrkzgulfup.com/uploads/164660913963584.png",
+    mobileImg: "https://mrkzgulfup.com/uploads/164661035537873.png",
+    link: "https://e-commerce-react-hooks-app.netlify.app/",
+    code: "https://github.com/omarelkamah/E-Commerce-App-React",
+    buttonColor: "teal",
+    madeWith: ["react", "react hooks", "react router dom", "styled components"],
+  },
+  {
+    id: 3,
     title: "Cyrptocurency react app",
     desc: "Create Cyrptocurency With ReactJs, axios And More Tooles, Please Check Everything. ",
     img: "https://mrkzgulfup.com/uploads/164676103726631.png",
@@ -40,7 +51,7 @@ export const dataProjectsPage = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Tesla React App",
     desc: "Create Tesla Clone With ReactJs And More Tooles, Please Check Everything. ",
     img: "https://mrkzgulfup.com/uploads/164660947853132.png",
@@ -57,7 +68,7 @@ export const dataProjectsPage = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "weather React App",
     desc: "Create weathe With ReactJs, axios And More Tooles, Please Check Everything. ",
     img: "https://mrkzgulfup.com/uploads/164685372252841.png",
@@ -68,7 +79,7 @@ export const dataProjectsPage = [
     madeWith: ["react", "react hooks", "axios", "css", "api"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Blog React App",
     desc: "Create Blog App With ReactJs And More Tooles, Please Check Everything. ",
     img: "https://mrkzgulfup.com/uploads/164660913949343.png",
@@ -85,7 +96,7 @@ export const dataProjectsPage = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "Agency React App",
     desc: "Create Agency App With ReactJs And More Tooles, Please Check Everything. ",
     img: "https://mrkzgulfup.com/uploads/16466091393192.png",
@@ -93,17 +104,6 @@ export const dataProjectsPage = [
     link: "https://agency-react-web-app.netlify.app/",
     code: "https://github.com/omarelkamah/Agency-App-React",
     buttonColor: "#dc143c",
-    madeWith: ["react", "react hooks", "react router dom", "styled components"],
-  },
-  {
-    id: 7,
-    title: "E-Commerce React App",
-    desc: "Create E-commerce App With ReactJs And More Tooles, Please Check Everything. ",
-    img: "https://mrkzgulfup.com/uploads/164660913963584.png",
-    mobileImg: "https://mrkzgulfup.com/uploads/164661035537873.png",
-    link: "https://e-commerce-react-hooks-app.netlify.app/",
-    code: "https://github.com/omarelkamah/E-Commerce-App-React",
-    buttonColor: "teal",
     madeWith: ["react", "react hooks", "react router dom", "styled components"],
   },
   {

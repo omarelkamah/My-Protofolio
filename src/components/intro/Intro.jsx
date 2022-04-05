@@ -20,9 +20,8 @@ function Intro ({ dark }) {
                   </div>
                 </div>
                 <p className='introDesc' style={{ color: dark && '#fff' }}>
-                  I design and develop services for customers of all sizes,
-                  specializing in creating stylish, modern websites, web
-                  services and online stores.
+                  Being able to build the designs I produce means I can bring
+                  your idea to life and make it usable in future.
                 </p>
               </div>
             </Fade>

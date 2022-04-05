@@ -1,24 +1,26 @@
+@import '../../global';
 .pl {
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
-    .pl-title {
-        font-size: 50px;
-        font-weight: 600;
-    }
+  .pl-title {
+    font-size: 50px;
+    font-weight: 600;
+  }
 
-    .pl-desc {
-        margin: 20px 0px;
-    }
+  .pl-desc {
+    margin: 20px 0px;
+  }
 
-    .projectsLink {
-        text-decoration: none;
-        padding: 10px 20px;
-        background: #0c0c0c;
-        color: white;
-        border-radius: 5px;
-    }
+  .projectsLink {
+    text-decoration: none;
+    background-color: $buttonColor;
+    box-shadow: 0 20px 20px rgb(13 121 221 / 19%);
+    padding: 15px 50px;
+    color: white;
+    border-radius: 5px;
+  }
 }
