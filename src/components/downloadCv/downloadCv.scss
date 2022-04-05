@@ -1,0 +1,27 @@
+.cv {
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333333;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+
+  .cv-info {
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #f9fafb;
+    margin-bottom: 50px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    background: #0c0c0c;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+}
