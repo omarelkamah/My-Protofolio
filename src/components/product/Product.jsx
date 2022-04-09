@@ -13,14 +13,14 @@ export default function Product ({ project }) {
           #{project.id}
         </div>
         <div className='imgContainer'>
-          <img src={project.img} alt='project-img' className='img-fluid' />
+          <img src={project.img} alt={project.title} className='img-fluid' />
         </div>
         <div className='item-buttons'>
           <Link
             to={`/projects/${project.id}`}
             style={{ background: `${project.buttonColor}` }}
           >
-            Details
+            {project.title}
           </Link>
         </div>
       </div>

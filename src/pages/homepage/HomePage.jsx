@@ -15,7 +15,7 @@ export default function HomePage ({ dark, setDark }) {
       <Intro dark={dark} />
       <About dark={dark} />
       <ProductList dark={dark} />
-      <DownloadCv />
+      <DownloadCv dark={dark} />
       <Contact dark={dark} />
     </div>
   )

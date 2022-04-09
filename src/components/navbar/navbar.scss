@@ -60,7 +60,11 @@
     .right {
       width: 30px;
       height: 30px;
-      margin-top: 3px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      cursor: pointer;
 
       span {
         width: 30px;
@@ -71,12 +75,8 @@
         align-items: center;
         background: #333;
         cursor: pointer;
-        transition: 1.5s ease;
+        transition: 1s ease;
         transform-origin: left;
-
-        &:not(:last-of-type) {
-          margin-bottom: 5px;
-        }
       }
     }
   }

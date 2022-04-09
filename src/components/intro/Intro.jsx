@@ -15,8 +15,6 @@ function Intro ({ dark }) {
                 <div className='introTitle'>
                   <div className='introTitleWrapper'>
                     <div className='introTitleItem'>Front End Developer</div>
-                    <div className='introTitleItem'>Front End Engineer</div>
-                    <div className='introTitleItem'>Web Developer</div>
                   </div>
                 </div>
                 <p className='introDesc' style={{ color: dark && '#fff' }}>

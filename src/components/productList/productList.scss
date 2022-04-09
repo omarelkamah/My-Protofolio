@@ -1,4 +1,4 @@
-@import '../../global';
+@import "../../global";
 .pl {
   padding: 50px 0;
   display: flex;
@@ -9,6 +9,10 @@
   .pl-title {
     font-size: 50px;
     font-weight: 600;
+
+    @include mobile {
+      font-size: 30px;
+    }
   }
 
   .pl-desc {

@@ -3,15 +3,12 @@ import Fade from 'react-reveal/Fade'
 
 export default function About ({ dark }) {
   return (
-    <div className='about' id='about'>
+    <div className='about' style={{ background: dark && '#333' }} id='about'>
       <div className='container'>
         <div className='row'>
           <div className='col-lg-6 a-left'>
             <Fade left>
-              <div
-                className='a-card bg'
-                style={{ background: dark && 'rgb(255 255 255 / 58%)' }}
-              ></div>
+              <div className='a-card bg'></div>
               <div className='a-card'>
                 <img src='assets/profileImg/me.jpg' alt='' className='a-img' />
               </div>

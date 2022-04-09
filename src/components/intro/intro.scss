@@ -20,6 +20,7 @@
     @include mobile {
       margin-top: 30px;
       text-align: center;
+      padding: 0;
     }
 
     .introLeftContainer {
@@ -55,10 +56,10 @@
           align-items: center;
 
           .introTitleItem {
-            animation: aniIntro 10s ease-in-out infinite alternate;
             font-size: 30px;
             color: $mainColor;
             font-weight: 500;
+            text-transform: uppercase;
           }
         }
       }
@@ -72,6 +73,9 @@
 
   .introRight {
     position: relative;
+    @include mobile {
+      display: none;
+    }
     .introBg {
       clip-path: polygon(
         100% 0%,
@@ -94,20 +98,5 @@
       position: relative;
       z-index: 1;
     }
-  }
-}
-
-@keyframes aniIntro {
-  25% {
-    transform: translateY(-50px);
-  }
-  50% {
-    transform: translateY(-100px);
-  }
-  75% {
-    transform: translateY(-120px);
-  }
-  100% {
-    transform: translateY(-150px);
   }
 }

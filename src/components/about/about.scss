@@ -1,4 +1,4 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .about {
   min-height: 100vh;
@@ -7,6 +7,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+
+  @include mobile {
+    padding-top: 40px;
+  }
 
   .a-left {
     display: flex;
@@ -22,6 +27,7 @@
       position: relative;
       overflow: hidden;
       @media (max-width: 992px) {
+        height: auto;
         & {
           margin-bottom: 70px;
         }
