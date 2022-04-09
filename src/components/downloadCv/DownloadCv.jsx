@@ -4,7 +4,10 @@ import './downloadCv.scss'
 
 export default function DownloadCv ({ dark }) {
   return (
-    <div className='cv' style={{ background: dark && '#333', color: '#fff' }}>
+    <div
+      className='cv'
+      style={{ background: dark && '#333', color: dark && '#fff' }}
+    >
       <div className='container'>
         <Fade top>
           <h3 className='cv-info'>check my CV...</h3>

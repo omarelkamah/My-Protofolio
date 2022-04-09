@@ -29,7 +29,7 @@ export default function Projects ({ dark }) {
                   <div className='imgContainer'>
                     <img
                       src={project.img}
-                      alt='project-img'
+                      alt={project.title}
                       className='img-fluid'
                     />
                   </div>
@@ -38,7 +38,7 @@ export default function Projects ({ dark }) {
                       to={`/projects/${project.id}`}
                       style={{ background: `${project.buttonColor}` }}
                     >
-                      Details
+                      {project.title}
                     </Link>
                   </div>
                 </div>
