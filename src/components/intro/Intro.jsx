@@ -1,8 +1,11 @@
 import './intro.scss'
 // import Me from '../../img/me.png'
 import Fade from 'react-reveal/Fade'
+import { useSelector } from 'react-redux'
 
-function Intro ({ dark }) {
+function Intro () {
+  const theamState = useSelector(state => state)
+
   return (
     <div className='intro'>
       <div className='container-fluid'>
@@ -17,7 +20,10 @@ function Intro ({ dark }) {
                     <div className='introTitleItem'>Front End Developer</div>
                   </div>
                 </div>
-                <p className='introDesc' style={{ color: dark && '#fff' }}>
+                <p
+                  className='introDesc'
+                  style={{ color: theamState.value && '#fff' }}
+                >
                   Being able to build the designs I produce means I can bring
                   your idea to life and make it usable in future.
                 </p>

@@ -1,9 +1,15 @@
 import './about.scss'
 import Fade from 'react-reveal/Fade'
+import { useSelector } from 'react-redux'
 
-export default function About ({ dark }) {
+export default function About () {
+  const theamState = useSelector(state => state)
   return (
-    <div className='about' style={{ background: dark && '#333' }} id='about'>
+    <div
+      className='about'
+      style={{ background: theamState.value && '#333' }}
+      id='about'
+    >
       <div className='container'>
         <div className='row'>
           <div className='col-lg-6 a-left'>

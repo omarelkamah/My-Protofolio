@@ -10,32 +10,22 @@ import ContactPage from "./pages/contactPage/ContactPage";
 
 function App() {
   const [openMenue, handeleMenue] = useState(false);
-  const [dark, setDark] = useState(false);
 
   return (
     <BrowserRouter>
       <Navbar openMenue={openMenue} handeleMenue={handeleMenue} />
-      <Menue
-        dark={dark}
-        setDark={setDark}
-        openMenue={openMenue}
-        handeleMenue={handeleMenue}
-      />
+      <Menue openMenue={openMenue} handeleMenue={handeleMenue} />
       <Routes>
-        <Route
-          path="/"
-          exact
-          element={<HomePage dark={dark} setDark={setDark} />}
-        />
+        <Route path="/" exact element={<HomePage />} />
         <Route
           path="/projects"
-          element={<Projects dark={dark} dataProjectsPage={dataProjectsPage} />}
+          element={<Projects dataProjectsPage={dataProjectsPage} />}
         />
         <Route
           path="/projects/:id"
-          element={<Project dark={dark} dataProjectsPage={dataProjectsPage} />}
+          element={<Project dataProjectsPage={dataProjectsPage} />}
         />
-        <Route path="/contact" element={<ContactPage dark={dark} />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
   );

@@ -4,12 +4,17 @@ import './projects.scss'
 import { dataProjectsPage } from '../../data'
 import { Link } from 'react-router-dom'
 import { Fade } from 'react-reveal'
+import { useSelector } from 'react-redux'
 
-export default function Projects ({ dark }) {
+export default function Projects () {
+  const theamState = useSelector(state => state)
   return (
     <div
       className='projectsPage'
-      style={{ background: dark ? '#222' : 'white' }}
+      style={{
+        background: theamState.value && '#222',
+        color: theamState.value && '#fff'
+      }}
     >
       <div className='container'>
         <div className='ProjectsPageInfo'>

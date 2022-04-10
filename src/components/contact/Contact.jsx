@@ -6,10 +6,12 @@ import { useRef, useState } from 'react'
 import Fade from 'react-reveal/Fade'
 
 import emailjs from 'emailjs-com'
+import { useSelector } from 'react-redux'
 
-export default function Contact ({ dark }) {
+export default function Contact () {
   const formRef = useRef()
   const [done, setDone] = useState()
+  const theamState = useSelector(state => state)
 
   const handelSubmit = e => {
     e.preventDefault()
@@ -34,7 +36,10 @@ export default function Contact ({ dark }) {
   return (
     <div
       className='contact'
-      style={{ background: dark && '#222', color: dark && 'white' }}
+      style={{
+        background: theamState.value && '#222',
+        color: theamState.value && 'white'
+      }}
     >
       <div className='c-bg'></div>
       <div className='container'>
@@ -68,25 +73,25 @@ export default function Contact ({ dark }) {
               </p>
               <form ref={formRef} onSubmit={handelSubmit}>
                 <input
-                  style={{ backgroundColor: dark && '#333' }}
+                  style={{ backgroundColor: theamState.value && '#333' }}
                   type='text'
                   placeholder='Name'
                   name='user_name'
                 />
                 <input
-                  style={{ backgroundColor: dark && '#333' }}
+                  style={{ backgroundColor: theamState.value && '#333' }}
                   type='text'
                   placeholder='Subject'
                   name='user_subject'
                 />
                 <input
-                  style={{ backgroundColor: dark && '#333' }}
+                  style={{ backgroundColor: theamState.value && '#333' }}
                   type='text'
                   placeholder='Email'
                   name='user_email'
                 />
                 <textarea
-                  style={{ backgroundColor: dark && '#333' }}
+                  style={{ backgroundColor: theamState.value && '#333' }}
                   rows='5'
                   placeholder='Message'
                   name='message'

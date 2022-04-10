@@ -1,14 +1,16 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import Toggle from '../toggle/Toggle'
 
 import './menue.scss'
 
-export default function Menue ({ openMenue, handeleMenue, dark, setDark }) {
+export default function Menue ({ openMenue, handeleMenue }) {
+  const theamState = useSelector(state => state)
   return (
     <div
       className={'menue ' + (openMenue && 'active')}
-      style={{ background: dark && '#333' }}
+      style={{ background: theamState.value && '#333' }}
     >
       <ul className='list'>
         <li onClick={() => handeleMenue(!openMenue)}>
@@ -21,7 +23,7 @@ export default function Menue ({ openMenue, handeleMenue, dark, setDark }) {
           <Link to='/contact'>Contact</Link>
         </li>
         <li onClick={() => handeleMenue(false)}>
-          <Toggle setDark={setDark} dark={dark} />
+          <Toggle />
         </li>
       </ul>
     </div>

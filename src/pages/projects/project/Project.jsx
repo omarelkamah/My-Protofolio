@@ -1,39 +1,57 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { Fade } from 'react-reveal'
 import { useParams } from 'react-router-dom'
 import './project.scss'
 
-export default function Project ({ dataProjectsPage, dark }) {
+export default function Project ({ dataProjectsPage }) {
   const id = useParams()
   const singleData = [dataProjectsPage[id.id - 1]]
-  // console.log(singleData.map(singleProject => singleProject.img))
+  const theamState = useSelector(state => state)
 
   return (
-    <div className='projectPage' style={{ background: dark && '#222' }}>
+    <div
+      className='projectPage'
+      style={{ background: theamState.value && '#222' }}
+    >
       <div className='container'>
         {singleData.map(singleProject => (
           <div className='row' key={Math.random()}>
             <div className='col-md-8'>
               <Fade left>
                 <div className='desctop-info'>
-                  <h3 className='info-title' style={{ color: dark && '#eee' }}>
+                  <h3
+                    className='info-title'
+                    style={{ color: theamState.value && '#eee' }}
+                  >
                     Project in Website
                   </h3>
                   <div className='imgContainer lab'>
                     <img
-                      src={dark ? '/assets/labDark.png' : '/assets/lab.png'}
+                      src={
+                        theamState.value
+                          ? '/assets/labDark.png'
+                          : '/assets/lab.png'
+                      }
                       alt='labtop'
                     />
                     <img src={singleProject.img} alt='' className='img-fluid' />
                   </div>
                 </div>
                 <div className='mobile-info'>
-                  <h3 className='info-title' style={{ color: dark && '#eee' }}>
+                  <h3
+                    className='info-title'
+                    style={{ color: theamState.value && '#eee' }}
+                  >
                     Project in Mobile
                   </h3>
                   <div className='imgContainer'>
                     <img
-                      src={dark ? '/assets/phoneDark.png' : '/assets/phone.png'}
+                      src={
+                        theamState.value
+                          ? '/assets/phoneDark.png'
+                          : '/assets/phone.png'
+                      }
                       alt='phone'
                     />
                     <img
@@ -50,7 +68,7 @@ export default function Project ({ dataProjectsPage, dark }) {
                 <div className='project-info'>
                   <h3
                     className='about-project'
-                    style={{ color: dark && '#eee' }}
+                    style={{ color: theamState.value && '#eee' }}
                   >
                     {singleProject.title}
                   </h3>
@@ -58,13 +76,13 @@ export default function Project ({ dataProjectsPage, dark }) {
                   <div className='made-by'>
                     <h3
                       className='about-project'
-                      style={{ color: dark && '#eee' }}
+                      style={{ color: theamState.value && '#eee' }}
                     >
                       made with
                     </h3>
                     {singleProject.madeWith.map(s => (
                       <span
-                        style={{ background: dark && '#333' }}
+                        style={{ background: theamState.value && '#333' }}
                         key={Math.random()}
                       >
                         {s}
@@ -74,7 +92,7 @@ export default function Project ({ dataProjectsPage, dark }) {
                   <div className='links'>
                     <h3
                       className='about-project'
-                      style={{ color: dark && '#eee' }}
+                      style={{ color: theamState.value && '#eee' }}
                     >
                       project links
                     </h3>

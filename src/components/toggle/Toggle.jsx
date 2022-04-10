@@ -8,8 +8,6 @@ export default function Toggle () {
   const theamState = useSelector(state => state)
   const dispatch = useDispatch()
 
-  console.log(theamState.value)
-
   return (
     <div className='t' onClick={() => dispatch(toggleTheam())}>
       <img src={Sun} alt='' className='t-icon' />
