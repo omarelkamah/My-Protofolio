@@ -8,9 +8,10 @@ const theamSlice = createSlice({
   reducers: {
     toggleTheam: (state, action) => {
       state.value = !state.value;
+      // console.log(state.value != state.value);
     },
   },
 });
 
-export const theamActions = theamSlice.actions;
+export const { toggleTheam } = theamSlice.actions;
 export default theamSlice;

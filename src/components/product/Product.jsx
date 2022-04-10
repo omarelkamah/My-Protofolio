@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import './product.scss'
 
 export default function Product ({ project }) {
-  console.log(project)
   return (
     <div className='col-md-4'>
       <div className='item'>
