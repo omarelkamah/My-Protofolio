@@ -18,7 +18,8 @@ export default function DownloadCv () {
           <h3 className='cv-info'>check my CV...</h3>
         </Fade>
         <Fade bottom>
-          <a href='assets/cv.pdf' download>
+          <a href='assets/Omar - Ahmed.pdf
+' download>
             download
           </a>
         </Fade>

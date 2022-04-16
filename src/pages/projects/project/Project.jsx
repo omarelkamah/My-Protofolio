@@ -5,9 +5,12 @@ import { useParams } from 'react-router-dom'
 import './project.scss'
 
 export default function Project ({ dataProjectsPage }) {
-  const id = useParams()
-  const singleData = [dataProjectsPage[id.id - 1]]
+  const projectName = useParams()
   const theamState = useSelector(state => state)
+
+  const singleData = dataProjectsPage.filter(
+    data => data.title === projectName.name
+  )
 
   return (
     <div

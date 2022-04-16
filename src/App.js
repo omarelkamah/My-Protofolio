@@ -22,7 +22,7 @@ function App() {
           element={<Projects dataProjectsPage={dataProjectsPage} />}
         />
         <Route
-          path="/projects/:id"
+          path="/projects/:name"
           element={<Project dataProjectsPage={dataProjectsPage} />}
         />
         <Route path="/contact" element={<ContactPage />} />

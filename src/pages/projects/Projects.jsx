@@ -40,7 +40,7 @@ export default function Projects () {
                   </div>
                   <div className='item-buttons'>
                     <Link
-                      to={`/projects/${project.id}`}
+                      to={`/projects/${project.title}`}
                       style={{ background: `${project.buttonColor}` }}
                     >
                       {project.title}
