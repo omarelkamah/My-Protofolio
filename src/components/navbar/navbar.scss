@@ -11,7 +11,7 @@
   color: #333;
   padding: 10px 40px;
   box-sizing: border-box;
-  transition: 1s ease;
+  transition: 0.3s ease;
   box-shadow: 0 -14px 14px 15px #cecccc;
 
   &.active {
@@ -75,7 +75,7 @@
         align-items: center;
         background: #333;
         cursor: pointer;
-        transition: 1s ease;
+        transition: 0.3s ease;
         transform-origin: left;
       }
     }

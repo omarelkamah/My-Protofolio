@@ -1,6 +1,35 @@
 export const dataProjectsPage = [
   {
     id: 1,
+    title: "Clouds Using Next, Tailwind",
+    desc: "Create E-Commerse Makeup Using NextJs, Tailwind CSS, Redux Toolkit, Please Check Everything. ",
+    img: "/assets/projectsImg/desctop/clouds.png",
+    mobileImg: "/assets/projectsImg/mobile/clouds.png",
+    link: "https://clouds-make.vercel.app/",
+    code: "https://github.com/omarelkamah/Clouds-MakeUp-Next-Js-App",
+    buttonColor: "#ffce53",
+    madeWith: [
+      "NextJs",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "Next Auth",
+      "react-icons",
+      "Makeup Api",
+    ],
+  },
+  {
+    id: 2,
+    title: "E-Commerce React App",
+    desc: "Create E-commerce App With ReactJs And More Tooles, Please Check Everything. ",
+    img: "/assets/projectsImg/desctop/commerce.png",
+    mobileImg: "/assets/projectsImg/mobile/commerce.png",
+    link: "https://e-commerce-react-hooks-app.netlify.app/",
+    code: "https://github.com/omarelkamah/E-Commerce-App-React",
+    buttonColor: "teal",
+    madeWith: ["react", "react hooks", "react router dom", "styled components"],
+  },
+  {
+    id: 3,
     title: "Full recipe app",
     desc: "Create Recipe App With ReactJs, axios And More Tooles, Please Check Everything. ",
     img: "/assets/projectsImg/desctop/full-recipe.png",
@@ -21,19 +50,9 @@ export const dataProjectsPage = [
       "spoonacular api",
     ],
   },
+
   {
-    id: 2,
-    title: "E-Commerce React App",
-    desc: "Create E-commerce App With ReactJs And More Tooles, Please Check Everything. ",
-    img: "/assets/projectsImg/desctop/commerce.png",
-    mobileImg: "/assets/projectsImg/mobile/commerce.png",
-    link: "https://e-commerce-react-hooks-app.netlify.app/",
-    code: "https://github.com/omarelkamah/E-Commerce-App-React",
-    buttonColor: "teal",
-    madeWith: ["react", "react hooks", "react router dom", "styled components"],
-  },
-  {
-    id: 3,
+    id: 4,
     title: "Cyrptocurency react app",
     desc: "Create Cyrptocurency With ReactJs, axios And More Tooles, Please Check Everything. ",
     img: "/assets/projectsImg/desctop/cyrency.png",
@@ -51,7 +70,7 @@ export const dataProjectsPage = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Tesla React App",
     desc: "Create Tesla Clone With ReactJs And More Tooles, Please Check Everything. ",
     img: "/assets/projectsImg/desctop/tesla.png",
@@ -68,7 +87,7 @@ export const dataProjectsPage = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "weather React App",
     desc: "Create weathe With ReactJs, axios And More Tooles, Please Check Everything. ",
     img: "/assets/projectsImg/desctop/weather.png",
@@ -79,7 +98,7 @@ export const dataProjectsPage = [
     madeWith: ["react", "react hooks", "axios", "css", "api"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Blog React App",
     desc: "Create Blog App With ReactJs And More Tooles, Please Check Everything. ",
     img: "/assets/projectsImg/desctop/blog.png",
@@ -96,7 +115,7 @@ export const dataProjectsPage = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "Agency React App",
     desc: "Create Agency App With ReactJs And More Tooles, Please Check Everything. ",
     img: "/assets/projectsImg/desctop/agency.png",
@@ -107,7 +126,7 @@ export const dataProjectsPage = [
     madeWith: ["react", "react hooks", "react router dom", "styled components"],
   },
   {
-    id: 8,
+    id: 9,
     title: "Cericht React App",
     desc: "Create Cericht App With ReactJs And More Tooles, Please Check Everything. ",
     img: "/assets/projectsImg/desctop/cericht.png",
@@ -118,7 +137,7 @@ export const dataProjectsPage = [
     madeWith: ["react", "react hooks", "react router dom", "scss"],
   },
   {
-    id: 9,
+    id: 10,
     title: "Admin Panal React App",
     desc: "Create Admin Panal With ReactJs And More Tooles, Please Check Everything. ",
     img: "/assets/projectsImg/desctop/admin-panal.png",
@@ -129,7 +148,7 @@ export const dataProjectsPage = [
     madeWith: ["react", "react hooks", "react router dom", "scss"],
   },
   {
-    id: 10,
+    id: 11,
     title: "Education.com",
     desc: "Create Education.com With Scss And More Tooles, Please Check Everything. ",
     img: "/assets/projectsImg/desctop/education.png",
@@ -140,7 +159,7 @@ export const dataProjectsPage = [
     madeWith: ["html", "html5", "scss", "boptstrap", "javaScript", "jQuery"],
   },
   {
-    id: 11,
+    id: 12,
     title: "Crispy.com",
     desc: "Create Crispy.com With Scss And More Tooles, Please Check Everything. ",
     img: "/assets/projectsImg/desctop/crispy.png",
@@ -151,7 +170,7 @@ export const dataProjectsPage = [
     madeWith: ["html", "html5", "scss", "booptstrap", "javaScript", "jQuery"],
   },
   {
-    id: 12,
+    id: 13,
     title: "Test Design",
     desc: "Create Test Design With Puer JavaScript And More Tooles, Please Check Everything. ",
     img: "/assets/projectsImg/desctop/newDesign.png",

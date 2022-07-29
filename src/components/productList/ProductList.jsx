@@ -21,7 +21,7 @@ function ProductList () {
             {dataProjectsPage.map(project => (
               <>
                 {project.id <= 6 ? (
-                  <Product project={project} key={project.id} />
+                  <Product project={project} key={Math.random()} />
                 ) : null}
               </>
             ))}
